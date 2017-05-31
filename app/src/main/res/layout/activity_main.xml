@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="#000000"
+            />
+
+        <RadioGroup
+            android:id="@+id/tabs_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:background="#F0F0F0"
+            >
+            <RadioButton
+                android:id="@+id/test1_tab"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:text="Test1 tab"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:singleLine="true"
+                android:checked="true"
+                android:scaleType="centerInside"
+                android:background="#00000000"
+                />
+            <RadioButton
+                android:id="@+id/test2_tab"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:text="Test2 tab"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:singleLine="true"
+                android:scaleType="centerInside"
+                android:background="#00000000"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
